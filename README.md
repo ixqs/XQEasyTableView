@@ -26,8 +26,10 @@ XQEasyTableView
 
 ##API
 
-#####｀cellType｀
+#####cellType
+
 类型：*｀Property｀*
+
 当前页面 ｀cell｀ 的类型
 
 **声明**
@@ -45,6 +47,7 @@ XQEasyTableView
 >  ｀@property (nonatomic, copy) NSArray *dataArray;｀
 
 **描述**
+
   当前页面对应的数据列表
 
 #####- setDataWithUrl: paramDic: pageSize:#####
