@@ -5,15 +5,15 @@ XQEasyTableView
 -----------------
 
 ##简介##
-XQTableView 的赋值方式主要有两种，根据直接给定的数据进行生成，和基于URL进行生成。
+`XQTableView` 的赋值方式主要有两种，根据直接给定的数据进行生成，和基于 URL 进行生成。
 
 ###直接给定数据###
 
 **步骤:**
 
-1. 使用TableView的初始化方法创建TableView并添加到视图上；
-2. 指定TableView的cellType类型；（cellType的**命名规则**：TableView所用cell的类名）
-3. 直接对dataArray进行赋值；
+1. 使用`TableView`的初始化方法创建`TableView`并添加到视图上；
+2. 指定`TableView`的cellType类型；（`cellType`的**命名规则**：`TableView`所用`cell`的类名）
+3. 直接对`dataArray`进行赋值；
 
 ###基于URL生成
 
