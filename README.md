@@ -102,54 +102,97 @@ XQTableViewBasicCell 和XQEasyTableView搭配使用，即在XQEasyTableView中�
 
 ##API##
 
-#####actionBlock#####
+####actionBlock
+
 block块属性，用于点击按钮后的回调
+
 **声明**
-> @property (nonatomic, copy) void (^actionBlock)(XQEasyTableViewBasicCell*, NSInteger*);
+> `@property (nonatomic, copy) void (^actionBlock)(XQEasyTableViewBasicCell*, NSInteger*);`
+
 **参数**
-XQEasyTableViewBasicCell：当前cell
-NSInteger：操作标记值
+
+`XQEasyTableViewBasicCell`：当前`cell`
+
+`NSInteger`：操作标记值
+
+
 **描述**
+
 在点击按钮或者其它改变cell内容的事件发生后，用来向外传递改变过的值，并进行相应的操作。
 
-#####click#####
-block块属性，用于点击cell后的回调
-**声明**
-> @property (nonatomic, copy) void (^click)(XQEasyTableViewBasicCell*, NSIndexPath*);
-**参数**
-XQEasyTableViewBasicCell：当前cell
-NSIndexPath：在TableView中的位置
-**描述**
-相当于代理方法中的 - tableView:didSelectRowAtIndexPath：
 
-#####createContent#####
-block块属性，设置数据后cell内部的刷新操作
-**声明**
-> @property (nonatomic, copy) void (^createContent)(XQEasyTableViewBasicCell*, NSDictionary*);
-**参数**
-XQEasyTableViewBasicCell: 当前cell
-NSDictionary:  设置内容所用的字典
-**描述**
-每次进行 cell.content ＝ dic；时都会调用，**避免在其中创建控件**。
+#####click
 
-#####height *Property*#####
+block块属性，用于点击`cell`后的回调
+
+**声明**
+
+> `@property (nonatomic, copy) void (^click)(XQEasyTableViewBasicCell*, NSIndexPath*);`
+
+**参数**
+
+`XQEasyTableViewBasicCell`：当前`cell`
+
+`NSIndexPath`：在`TableView`中的位置
+
+**描述**
+
+相当于代理方法中的 `- tableView:didSelectRowAtIndexPath：`
+
+#####createContent
+
+block块属性，设置数据后`cell`内部的刷新操作
+
+**声明**
+
+> `@property (nonatomic, copy) void (^createContent)(XQEasyTableViewBasicCell*, NSDictionary*);`
+
+**参数**
+
+`XQEasyTableViewBasicCell`: 当前`cell`
+
+`NSDictionary`:  设置内容所用的字典
+
+**描述**
+每次进行 `cell.content ＝ dic；`时都会调用，**避免在其中创建控件**。
+
+
+####height 
+
+类型：*Property*
+
 cell的高度
-**声明**
-> @property (nonatomic, assign) CGFloat height;
-**描述**
-在createContent中进行设置，可以动态改变cell的高度。
 
-#####- configCell#####
-cell 的初始化设置方法
 **声明**
-> - (void)configCell;
-**描述**
-在里边对cell的内部控件及各个属性进行初始化。
 
-#####- currentViewController#####
-**声明**
-> - (UIViewController *)currentViewController;
+> `@property (nonatomic, assign) CGFloat height;`
+
 **描述**
+在`createContent`中进行设置，可以动态改变`cell`的高度。
+
+
+####- configCell
+`cell` 的初始化设置方法
+
+**声明**
+
+> `- (void)configCell;`
+
+**描述**
+
+在里边对`cell`的内部控件及各个属性进行初始化。
+
+
+####- currentViewController
+
+当前cell所在的ViewController
+
+**声明**
+
+> `- (UIViewController *)currentViewController;`
+
+**描述**
+
 获取当前cell所在的ViewController
 
 
