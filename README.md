@@ -56,18 +56,22 @@ XQEasyTableView
 
 
 
-####- setDataWithUrl: paramDic: pageSize:
+#### - setDataWithUrl: paramDic: pageSize:
  设置当前页面为网络请求方式
  
 **声明**
->  -(void)setDataWithUrl:(NSString *)url paramDic:(NSDictionary *)paramDic pageSize:(NSInteger)pageSize;
+>  `- (void)setDataWithUrl:(NSString *)url paramDic:(NSDictionary *)paramDic pageSize:(NSInteger)pageSize;`
 
 **参数**
+
 url:网络请求地址
+
 paramDic:请求参数
+
 pageSize:页面大小
 
 **描述**
+
   设置网络请求链接及参数，同时将自动将数据获取方式设置为网络获取，并进行了一系列操作。
 
 
@@ -76,12 +80,14 @@ pageSize:页面大小
 刷新页面
 
 **声明**
->  - (void)refreshWithParamDic:(NSDictionary *)parmdic;
+>  `- (void)refreshWithParamDic:(NSDictionary *)parmdic;`
 
 **参数**
+
 parmdic:网络请求参数
 
 **描述**
+
   设置网络请求链接及参数，再次发起网络请求并刷新页面。
 
 
