@@ -28,9 +28,9 @@ XQEasyTableView
 
 #####cellType
 
-类型：*｀Property｀*
+类型：*Property*
 
-当前页面 ｀cell｀ 的类型
+当前页面｀cell｀的类型
 
 **声明**
 
