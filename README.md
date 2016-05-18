@@ -4,43 +4,45 @@ XQEasyTableView 使用说明
 XQEasyTableView
 -----------------
 
-##简介##
+##简介
 `XQTableView` 的赋值方式主要有两种，根据直接给定的数据进行生成，和基于 URL 进行生成。
 
-###直接给定数据###
+###直接给定数据
 
 **步骤:**
 
 1. 使用`TableView`的初始化方法创建`TableView`并添加到视图上；
-2. 指定`TableView`的cellType类型；（`cellType`的**命名规则**：`TableView`所用`cell`的类名）
+2. 指定`TableView`的`cellType`类型；（`cellType`的**命名规则**：`TableView`所用`cell`的类名）
 3. 直接对`dataArray`进行赋值；
 
 ###基于URL生成
 
 **步骤:**
 
-1. 使用TableView的初始化方法创建TableView并添加到视图上；
-2. 指定TableView的cellType类型；（cellType的**命名规则**：TableView所用cell的类名）
-3. 调用setDataWithUrl: paramDic:pageSize方法；
+1. 使用`TableView`的初始化方法创建`TableView`并添加到视图上；
+2. 指定`TableView`的`cellType`类型；（`cellType`的**命名规则**：`TableView`所用`cell`的类名）
+3. 调用`- setDataWithUrl: paramDic:pageSize`方法；
 
 
-##API##
+##API
 
-#####cellType#####*Property*
-当前页面 cell 的类型
+#####｀cellType｀
+类型：*｀Property｀*
+当前页面 ｀cell｀ 的类型
 
 **声明**
 
->  @property (nonatomic, copy) NSString *cellType;
+>  ｀@property (nonatomic, copy) NSString *cellType;｀
 
 **描述**
 
-  该类型所对应 cell 的类名
+  该类型所对应 ｀cell｀ 的类名
 
-#####dataArray *Property*#####
+#####｀dataArray｀ 
+类型：*Property＊
 页面内容
 **声明**
->  @property (nonatomic, copy) NSArray *dataArray;
+>  ｀@property (nonatomic, copy) NSArray *dataArray;｀
 
 **描述**
   当前页面对应的数据列表
