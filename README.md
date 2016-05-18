@@ -8,13 +8,17 @@ XQEasyTableView
 XQTableView 的赋值方式主要有两种，根据直接给定的数据进行生成，和基于URL进行生成。
 
 ###直接给定数据###
+
 **步骤:**
+
 1. 使用TableView的初始化方法创建TableView并添加到视图上；
 2. 指定TableView的cellType类型；（cellType的**命名规则**：TableView所用cell的类名）
 3. 直接对dataArray进行赋值；
 
 ###基于URL生成
+
 **步骤:**
+
 1. 使用TableView的初始化方法创建TableView并添加到视图上；
 2. 指定TableView的cellType类型；（cellType的**命名规则**：TableView所用cell的类名）
 3. 调用setDataWithUrl: paramDic:pageSize方法；
@@ -22,7 +26,7 @@ XQTableView 的赋值方式主要有两种，根据直接给定的数据进行�
 
 ##API##
 
-#####cellType  *Property*#####
+#####cellType#####*Property*
 当前页面 cell 的类型
 
 **声明**
