@@ -24,22 +24,30 @@ XQTableView 的赋值方式主要有两种，根据直接给定的数据进行�
 
 #####cellType  *Property*#####
 当前页面 cell 的类型
+
 **声明**
+
 >  @property (nonatomic, copy) NSString *cellType;
+
 **描述**
+
   该类型所对应 cell 的类名
 
 #####dataArray *Property*#####
 页面内容
 **声明**
 >  @property (nonatomic, copy) NSArray *dataArray;
+
 **描述**
   当前页面对应的数据列表
 
 #####- setDataWithUrl: paramDic: pageSize:#####
+
  设置当前页面为网络请求方式
+ 
 **声明**
->  - (void)setDataWithUrl:(NSString *)url paramDic:(NSDictionary *)paramDic pageSize:(NSInteger)pageSize;
+>  -(void)setDataWithUrl:(NSString *)url paramDic:(NSDictionary *)paramDic pageSize:(NSInteger)pageSize;
+
 **参数**
 url:网络请求地址
 paramDic:请求参数
