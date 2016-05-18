@@ -34,21 +34,26 @@ XQEasyTableView
 
 **声明**
 
->  ｀@property (nonatomic, copy) NSString *cellType;｀
+>  @property (nonatomic, copy) NSString *cellType;
 
 **描述**
 
-  该类型所对应 ｀cell｀ 的类名
+  该类型所对应｀cell｀的类名
 
-#####｀dataArray｀ 
+
+#####dataArray 
+
 类型：*Property＊
+
 页面内容
+
 **声明**
->  ｀@property (nonatomic, copy) NSArray *dataArray;｀
+>  @property (nonatomic, copy) NSArray *dataArray;
 
 **描述**
 
   当前页面对应的数据列表
+
 
 #####- setDataWithUrl: paramDic: pageSize:#####
 
